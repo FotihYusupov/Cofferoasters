@@ -1,0 +1,42 @@
+.footer-section{
+    padding: 47px 0;
+    background-color: #2C343E;
+}
+.footer-section__wrapper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-section__messengers{
+    display: flex;
+    align-items: center;
+    @include list-unstyled;
+}
+.footer-section__messengers-item{
+    margin-right: 24px;
+}
+.footer-section__messenger-link{
+    &:hover{
+        color: #FDD6BA;
+    }
+    color: #fff;
+    transition: color 0.3s ease;
+}
+@include breakpoint-down(800px){
+    .footer-section__wrapper{
+        justify-content: center;
+    }
+    .footer-section__messengers{
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+@include breakpoint-down(500px){
+    .footer-logo{
+        width: 236px;
+        margin: 0 auto;
+
+    }
+}

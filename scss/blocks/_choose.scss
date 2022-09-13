@@ -1,0 +1,76 @@
+.choose{
+    margin-bottom: 350px;
+}
+.choose__wrapper{
+    position: relative;
+    padding: 100px 0 317px 0;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #2C343E;
+}
+.choose__title-wrapper{
+    width: 540px;
+    margin: 0 auto;
+    text-align: center;
+}
+.choose__text{
+    font-family: "Barlow";
+}
+.choose__cards{
+    @include list-unstyled;
+    position: absolute;
+    padding:  0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    top: 320px;
+    list-style: none;
+}
+.choose__card{
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+    width: 350px;
+    padding: 72px 48px 48px 48px;
+    margin-bottom: 24px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: $PORCELAINGREEN;
+}
+.choose__card-title{
+    margin: 50px 0 24px 0;
+}
+@include breakpoint-down(1100px){
+    .choose{
+        margin-bottom: 500px;
+    }
+}
+@include breakpoint-down(800px){
+    .choose{
+        margin-bottom: 1000px;
+    }
+}
+@include breakpoint-down(740px){
+    .choose__card{
+        &:not(:last-child){
+            margin-right: 0px;
+        }
+    }
+}
+@include breakpoint-down(550px){
+    .choose__title-wrapper{
+        width: 400px;
+    }
+    .choose__card{
+        &:not(:last-child){
+            margin-right: 0px;
+        }
+        width: 100%;
+    }
+}
+@include breakpoint-down(400px){
+    .choose__title-wrapper{
+        width: 250px;
+    }
+}
