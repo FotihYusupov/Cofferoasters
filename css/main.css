@@ -1174,4 +1174,24 @@ img {
 }
 .create__inputs-list .create__input-item input[type=radio]:checked:focus + label + label:before {
   box-shadow: 0 0 5px #0E8784;
+}
+
+.create__order-wrapper {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 20px;
+  border-radius: 10px;
+  background-color: #333D4B;
+  color: #fff;
+}
+
+.create__order-title {
+  font-weight: normal;
+}
+
+.create__order-text {
+  width: 600px;
+  font-size: 24px;
 }/*# sourceMappingURL=main.css.map */

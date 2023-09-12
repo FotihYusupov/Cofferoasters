@@ -28,6 +28,11 @@
     text-decoration: none;
     color: #333D4B;
 }
+// .create__forms-wrapper {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: start;
+// }
 .create__inputs-list-title {
     margin-bottom: 40px;
     font-size: 40px;
@@ -87,4 +92,21 @@
             box-shadow: 0 0 5px $primary-color;
         }
     } 
+}
+.create__order-wrapper {
+    margin-top: 40px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 20px;
+    border-radius: 10px;
+    background-color: #333D4B;
+    color: #fff;
+}
+.create__order-title {
+    font-weight: normal;
+}
+.create__order-text {
+    width: 600px;
+    font-size: 24px;
 }
