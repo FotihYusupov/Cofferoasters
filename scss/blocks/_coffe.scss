@@ -1,0 +1,27 @@
+.coffe {
+    margin-bottom: 150px;
+}
+.coffe__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 50px 100px 80px;
+    background-color: #2C343E;
+    border-radius: 10px;
+}
+.coffe__content-wrapper {
+    width: 540px;
+    color: #ffffff;
+}
+.coffe__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.coffe__text {
+}
+.coffe__img {
+    z-index: 10;
+    margin-top: -150px;
+    border-radius: 10px;
+}

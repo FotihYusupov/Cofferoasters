@@ -1,0 +1,90 @@
+@mixin box-shadow($opacity) {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, $opacity),
+    0 1px 2px rgba(0, 0, 0, $opacity * 2);
+}
+.create {
+    margin-top: -100px;
+    margin-bottom: 100px;
+}
+.create__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+}
+.create__nav-list {
+    margin: 0;
+    padding: 0;
+}
+.create__nav-item {
+    ::marker {
+        background-color: #333D4B;
+    }
+    margin-bottom: 20px;
+    padding: 0 20px 20px 30px;
+    border-bottom: 2px solid #333D4B;
+}
+.create__nav-link {
+    display: block;
+    text-decoration: none;
+    color: #333D4B;
+}
+.create__inputs-list-title {
+    margin-bottom: 40px;
+    font-size: 40px;
+    color: #83888F;
+}
+.create__inputs-list {
+    @include list-unstyled;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    :hover {
+        opacity: 0.5;
+    }
+    .create__input-item {
+        position: relative;
+        width: 185px;
+        min-height: 200px;
+        margin: 10px;
+        border-radius: 5px;
+        background-color: #F4F1EB;
+        @include box-shadow(0.1);
+        .create__item-content {
+            box-sizing: border-box;
+            padding: 20px;
+            color: #333D4B;
+        }
+        input[type="radio"] {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            opacity: 0;
+        }
+        input[type="radio"] + label:before {
+            position: absolute;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            content: " ";
+            border-radius: 5px;
+        }
+        input[type="radio"]:focus + label:before {
+            border: 3px solid $primary-color;
+        }
+        input[type="radio"]:checked + label:before {
+            border: 3px solid $primary-color;
+        }
+        input[type="radio"]:checked:focus + label + label:before {
+            box-shadow: 0 0 5px $primary-color;
+        }
+    } 
+}

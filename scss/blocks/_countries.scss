@@ -1,0 +1,27 @@
+.countries {
+    margin-bottom: 150px;
+}
+.countries__wrapper {
+    padding: 0px 60px;
+}
+.countries__title {
+    margin: 0;
+    margin-bottom: 70px;
+    font-size: 34px;
+    color: #83888F;
+}
+.countries__list {
+    @include list-unstyled;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+}
+.countries__item-title {
+    margin: 20px 0px;
+    font-size: 24px;
+    color: #333D4B;
+}
+.countries__item-text {
+    font-size: 15px;
+}

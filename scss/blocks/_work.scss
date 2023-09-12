@@ -1,6 +1,14 @@
 .work{
     margin-bottom: 200px;
 }
+.work__wrapper-create {
+    padding: 80px;
+    border-radius: 10px;
+    background-color: #333D4B;
+    .work__item {
+        color: #fff;
+    }
+}
 .work__title{
     margin: 0;
     margin-bottom: 80px;
@@ -34,7 +42,7 @@
         height: 31px;
         border: 2px solid #0E8784;
         border-radius: 50%;
-        background-color: #fff;
+        background-color: transparent;
         content: '';
     }
     
@@ -59,6 +67,14 @@
     font-size: 16px;
     line-height: 26px;
     color: #333D4B;
+}
+.work__wrapper-create {
+    .work__item-title {
+        color: #fff !important;
+    }
+    .work__item-text {
+        color: #fff !important;
+    }
 }
 @include breakpoint-down(900px){
     .work__title{

@@ -1,0 +1,45 @@
+.about-section {
+    margin-bottom: 150px;
+}
+.about-section__wrapper {
+    padding: 115px 20px;
+    border-radius: 10px;
+    background-image: url('../../img/aboutBg.png');
+    background-repeat: no-repeat;
+}
+.about-section__content-wrapper {
+    margin-left: 80px;
+    width: 445px;
+    color: #ffffff;
+}
+.about-section__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px;
+}
+.about-section__text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 26px; 
+}
+
+// @include breakpoint-down(800px){
+//     .about-section__wrapper{
+//         padding: 100px; 
+//         background-image: url('../../img/aboutBgTablet.png');
+//     }
+//     .about-section__content-wrapper{
+//         margin: 0;
+//         width: 250px;
+//     }
+//     .about-section__title{
+//         font-size: 38px;
+//     }
+//     .about-section__text{
+//         font-size: 14px;
+//     }
+// }
